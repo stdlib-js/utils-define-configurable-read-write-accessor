@@ -24,7 +24,23 @@ limitations under the License.
 
 > [Define][@stdlib/utils/define-property] a configurable **read-write** accessor.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-define-configurable-read-write-accessor
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
@@ -33,7 +49,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import setConfigurableReadWriteAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-read-write-accessor@deno/mod.js';
+var setConfigurableReadWriteAccessor = require( '@stdlib/utils-define-configurable-read-write-accessor' );
 ```
 
 #### setConfigurableReadWriteAccessor( obj, prop, getter, setter )
@@ -88,7 +104,7 @@ v = obj.foo;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import setConfigurableReadWriteAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-read-write-accessor@deno/mod.js';
+var setConfigurableReadWriteAccessor = require( '@stdlib/utils-define-configurable-read-write-accessor' );
 
 function Foo( name ) {
     if ( !(this instanceof Foo) ) {
@@ -144,7 +160,7 @@ console.log( foo.name );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -161,7 +177,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -204,19 +220,19 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-define-configurable-read-write-accessor/main/LICENSE
 
-[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property/tree/deno
+[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property
 
 <!-- <related-links> -->
 
-[@stdlib/utils/define-configurable-read-only-property]: https://github.com/stdlib-js/utils-define-configurable-read-only-property/tree/deno
+[@stdlib/utils/define-configurable-read-only-property]: https://github.com/stdlib-js/utils-define-configurable-read-only-property
 
-[@stdlib/utils/define-configurable-read-only-accessor]: https://github.com/stdlib-js/utils-define-configurable-read-only-accessor/tree/deno
+[@stdlib/utils/define-configurable-read-only-accessor]: https://github.com/stdlib-js/utils-define-configurable-read-only-accessor
 
-[@stdlib/utils/define-configurable-write-only-accessor]: https://github.com/stdlib-js/utils-define-configurable-write-only-accessor/tree/deno
+[@stdlib/utils/define-configurable-write-only-accessor]: https://github.com/stdlib-js/utils-define-configurable-write-only-accessor
 
-[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property/tree/deno
+[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property
 
-[@stdlib/utils/define-read-write-accessor]: https://github.com/stdlib-js/utils-define-read-write-accessor/tree/deno
+[@stdlib/utils/define-read-write-accessor]: https://github.com/stdlib-js/utils-define-read-write-accessor
 
 <!-- </related-links> -->
 
