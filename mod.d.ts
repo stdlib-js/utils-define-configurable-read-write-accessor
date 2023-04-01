@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2019 The Stdlib Authors.
@@ -16,22 +16,37 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var defineProperty = require( '@stdlib/utils-define-property' );
+import { PropertyName } from '@stdlib/types/object';
 
+/**
+* Getter function.
+*
+* @returns property value
+*/
+type Getter = () => any;
 
-// MAIN //
+/**
+* Setter function.
+*
+* @param value - property value
+*/
+type Setter = ( x: any ) => void;
 
 /**
 * Defines a configurable read-write accessor.
 *
-* @param {Object} obj - object on which to define the property
-* @param {(string|symbol)} prop - property name
-* @param {Function} getter - get accessor
-* @param {Function} setter - set accessor
+* ## Notes
+*
+* -   Configurable read-write accessors are **enumerable**.
+*
+* @param obj - object on which to define property
+* @param prop - property name
+* @param getter - get accessor
+* @param setter - set accessor
 *
 * @example
 * var name = 'bar';
@@ -55,16 +70,9 @@ var defineProperty = require( '@stdlib/utils-define-property' );
 * v = obj.foo;
 * // returns 'beep foo'
 */
-function setConfigurableReadWriteAccessor( obj, prop, getter, setter ) { // eslint-disable-line id-length
-	defineProperty( obj, prop, {
-		'configurable': true,
-		'enumerable': true,
-		'get': getter,
-		'set': setter
-	});
-}
+declare function setConfigurableReadWriteAccessor( obj: any, prop: PropertyName, getter: Getter, setter: Setter ): void; // tslint:disable-line: max-line-length
 
 
 // EXPORTS //
 
-module.exports = setConfigurableReadWriteAccessor;
+export = setConfigurableReadWriteAccessor;
