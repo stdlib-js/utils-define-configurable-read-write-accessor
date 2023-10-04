@@ -44,7 +44,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import setConfigurableReadWriteAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-read-write-accessor@deno/mod.js';
+import setConfigurableReadWriteAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-read-write-accessor@v0.1.1-deno/mod.js';
 ```
 
 #### setConfigurableReadWriteAccessor( obj, prop, getter, setter )
@@ -99,7 +99,7 @@ v = obj.foo;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import setConfigurableReadWriteAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-read-write-accessor@deno/mod.js';
+import setConfigurableReadWriteAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-read-write-accessor@v0.1.1-deno/mod.js';
 
 function Foo( name ) {
     if ( !(this instanceof Foo) ) {
