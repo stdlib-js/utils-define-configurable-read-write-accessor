@@ -35,7 +35,23 @@ limitations under the License.
 
 > [Define][@stdlib/utils/define-property] a configurable **read-write** accessor.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-define-configurable-read-write-accessor
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
@@ -43,37 +59,8 @@ limitations under the License.
 
 <!-- eslint-disable id-length -->
 
-To use in Observable,
-
 ```javascript
-setConfigurableReadWriteAccessor = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-read-write-accessor@umd/browser.js' )
-```
-The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-define-configurable-read-write-accessor/tags). For example,
-
-```javascript
-setConfigurableReadWriteAccessor = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-read-write-accessor@v0.1.1-umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var setConfigurableReadWriteAccessor = require( 'path/to/vendor/umd/utils-define-configurable-read-write-accessor/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-read-write-accessor@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.setConfigurableReadWriteAccessor;
-})();
-</script>
+var setConfigurableReadWriteAccessor = require( '@stdlib/utils-define-configurable-read-write-accessor' );
 ```
 
 #### setConfigurableReadWriteAccessor( obj, prop, getter, setter )
@@ -127,13 +114,8 @@ v = obj.foo;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-read-write-accessor@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var setConfigurableReadWriteAccessor = require( '@stdlib/utils-define-configurable-read-write-accessor' );
 
 function Foo( name ) {
     if ( !(this instanceof Foo) ) {
@@ -156,11 +138,6 @@ console.log( foo.name );
 
 foo.name = 'Ada';
 console.log( foo.name );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -224,8 +201,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/utils-define-configurable-read-write-accessor.svg
 [npm-url]: https://npmjs.org/package/@stdlib/utils-define-configurable-read-write-accessor
 
-[test-image]: https://github.com/stdlib-js/utils-define-configurable-read-write-accessor/actions/workflows/test.yml/badge.svg?branch=v0.1.1
-[test-url]: https://github.com/stdlib-js/utils-define-configurable-read-write-accessor/actions/workflows/test.yml?query=branch:v0.1.1
+[test-image]: https://github.com/stdlib-js/utils-define-configurable-read-write-accessor/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/utils-define-configurable-read-write-accessor/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-define-configurable-read-write-accessor/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils-define-configurable-read-write-accessor?branch=main
@@ -254,19 +231,19 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-define-configurable-read-write-accessor/main/LICENSE
 
-[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property/tree/umd
+[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property
 
 <!-- <related-links> -->
 
-[@stdlib/utils/define-configurable-read-only-property]: https://github.com/stdlib-js/utils-define-configurable-read-only-property/tree/umd
+[@stdlib/utils/define-configurable-read-only-property]: https://github.com/stdlib-js/utils-define-configurable-read-only-property
 
-[@stdlib/utils/define-configurable-read-only-accessor]: https://github.com/stdlib-js/utils-define-configurable-read-only-accessor/tree/umd
+[@stdlib/utils/define-configurable-read-only-accessor]: https://github.com/stdlib-js/utils-define-configurable-read-only-accessor
 
-[@stdlib/utils/define-configurable-write-only-accessor]: https://github.com/stdlib-js/utils-define-configurable-write-only-accessor/tree/umd
+[@stdlib/utils/define-configurable-write-only-accessor]: https://github.com/stdlib-js/utils-define-configurable-write-only-accessor
 
-[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property/tree/umd
+[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property
 
-[@stdlib/utils/define-read-write-accessor]: https://github.com/stdlib-js/utils-define-read-write-accessor/tree/umd
+[@stdlib/utils/define-read-write-accessor]: https://github.com/stdlib-js/utils-define-read-write-accessor
 
 <!-- </related-links> -->
 
