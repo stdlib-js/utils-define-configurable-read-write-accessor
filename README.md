@@ -241,8 +241,6 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/utils/define-configurable-write-only-accessor]: https://github.com/stdlib-js/utils-define-configurable-write-only-accessor
 
-[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property
-
 [@stdlib/utils/define-read-write-accessor]: https://github.com/stdlib-js/utils-define-read-write-accessor
 
 <!-- </related-links> -->
